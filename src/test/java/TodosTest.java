@@ -52,7 +52,7 @@ public class TodosTest {
         todos.add(meeting);
 
         Task[] expected = {simpleTask, epic, meeting};
-        Task[] actual = todos.findAll();
+        Task[] actual = todos.search("Создать приложение");
         Assertions.assertArrayEquals(expected, actual);
     }
 
